@@ -13,8 +13,8 @@
 ## Comece Aqui
 
 1.  Leia a [Filosofia](./filosofia/_indice.filosofia.md) por trás do framework.
-2.  Domine os [Protocolos de Comunicação](./protocolos/_indice.*.md) essenciais.
-3.  Aplique os [Fluxos de Trabalho](./fluxos_de_trabalho/_indice.*.md) em seus projetos.
+2.  Domine os [Protocolos de Comunicação](./protocolos/_indice.protocolos.md) essenciais.
+3.  Aplique os [Fluxos de Trabalho](./fluxos_de_trabalho/_indice.fluxo_de_trabalho.md) em seus projetos.
 
 ## Visão Geral
 
