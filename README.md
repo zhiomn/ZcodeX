@@ -23,4 +23,4 @@ O ZcodeX não é um prompt. É um framework completo que fornece:
 -   **Protocolos Estritos:** Regras claras para comunicação e execução.
 -   **Processos Reproduzíveis:** Fluxos para transformar ideias em software.
 
-**Próximo:** Explore o [Índice de Protocolos](./protocolos/_indice.protocolos.*.md).
+**Próximo:** Explore o [Índice de Protocolos](./protocolos/_indice.protocolos.md).
