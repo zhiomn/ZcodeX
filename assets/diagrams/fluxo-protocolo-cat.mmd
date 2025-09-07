@@ -1,0 +1,29 @@
+flowchart LR
+    Start[Início Protocolo CAT] --> CheckSintaxe[Verificar Sintaxe]
+    
+    CheckSintaxe --> Check1[Tem << 'EOF'?]
+    Check1 -->|Não| Error1[ERRO: Falta aspas simples]
+    Check1 -->|Sim| Check2
+    
+    Check2[Conteúdo com 4 espaços?] -->|Não| Error2[ERRO: Indentação incorreta]
+    Check2 -->|Sim| Check3
+    
+    Check3[Tem ``` no conteúdo?] -->|Sim| Error3[ERRO: Fences proibidas]
+    Check3 -->|Não| Check4
+    
+    Check4[EOF final isolado?] -->|Não| Error4[ERRO: EOF mal formatado]
+    Check4 -->|Sim| Success[✅ Protocolo CAT Válido]
+    
+    Success --> ListFiles[Gerar Lista de Arquivos]
+    ListFiles --> ActionSummary[Gerar Sumário de Ação]
+    ActionSummary --> End[Fim]
+    
+    Error1 --> Fail[FALHA CRÍTICA]
+    Error2 --> Fail
+    Error3 --> Fail
+    Error4 --> Fail
+    
+    style Success fill:#c8e6c9
+    style Fail fill:#ffcdd2
+    style Start fill:#bbdefb
+    style End fill:#c8e6c9
